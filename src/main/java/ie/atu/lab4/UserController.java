@@ -21,7 +21,7 @@ public class UserController
         this.registrationServiceClient = registrationServiceClient;
     }
 
-    @PostMapping("/confirm-and-register")
+     @PostMapping("/confirm-and-register")
     public Map<String,String> confirmAndRegister(@RequestBody UserDetails userDetails)
     {
         String confrim = registrationServiceClient.someDetails((userDetails));
